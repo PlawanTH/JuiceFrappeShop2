@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.plawanth.juicefrappeshop.fragment.DrinkEditFragment">
+
+    <TextView
+        android:id="@+id/edit_drink_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="@string/add_drink"
+        android:textSize="24sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/main_button_default_padding"
+        android:paddingRight="@dimen/main_button_default_padding">
+
+        <TextView
+            android:id="@+id/edit_drink_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อเครื่องดื่ม:"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edit_drink_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/edit_drink_name_text"
+            android:layout_alignBottom="@id/edit_drink_name_text"
+            android:layout_alignBaseline="@id/edit_drink_name_text"
+            android:layout_toRightOf="@id/edit_drink_name_text"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/edit_drink_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_drink_name_text"
+            android:text="ประเภทเครื่องดื่ม:"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/edit_drink_type_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_below="@id/edit_drink_name_edit_text"
+            android:layout_alignTop="@id/edit_drink_type_text"
+            android:layout_alignBottom="@id/edit_drink_type_text"
+            android:layout_alignBaseline="@id/edit_drink_type_text"
+            android:layout_toRightOf="@id/edit_drink_type_text"
+            android:layout_marginLeft="10dp"/>
+
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edit_drink_type_edit_text"
+            android:layout_marginTop="10dp"
+            android:text="@string/ok"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ok_button"
+            android:layout_alignBottom="@id/ok_button"
+            android:layout_toLeftOf="@id/ok_button"
+            android:text="@string/cancel"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

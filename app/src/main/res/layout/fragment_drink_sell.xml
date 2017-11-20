@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.plawanth.juicefrappeshop.fragment.DrinkSellFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Sell Fragment"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sell_drink_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
